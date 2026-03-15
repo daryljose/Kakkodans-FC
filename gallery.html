@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Gallery</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>Kakkodans FC</h1>
+</header>
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="team.html">Team</a>
+<a href="players.html">Players</a>
+<a href="matches.html">Matches</a>
+<a href="events.html">Events</a>
+<a href="achievements.html">Achievements</a>
+<a href="gallery.html">Gallery</a>
+<a href="contact.html">Contact</a>
+
+</nav>
+
+<div class="container">
+
+<h2>Gallery</h2>
+
+<div class="gallery">
+
+<img src="images/1.jpg" onclick="openImage(this.src)">
+<img src="images/2.jpg" onclick="openImage(this.src)">
+<img src="images/3.jpg" onclick="openImage(this.src)">
+<img src="images/4.jpg" onclick="openImage(this.src)">
+<img src="images/5.jpg" onclick="openImage(this.src)">
+<img src="images/6.jpg" onclick="openImage(this.src)">
+<img src="images/7.jpg" onclick="openImage(this.src)">
+<img src="images/8.jpg" onclick="openImage(this.src)">
+
+</div>
+
+</div>
+
+<!-- Fullscreen Image Viewer -->
+<div id="imageViewer" class="viewer" onclick="closeImage()">
+<img id="viewerImg">
+</div>
+
+<footer>
+
+© 2026 Kakkodans FC
+
+</footer>
+
+<script>
+
+function openImage(src){
+document.getElementById("imageViewer").style.display="flex";
+document.getElementById("viewerImg").src = src;
+}
+
+function closeImage(){
+document.getElementById("imageViewer").style.display="none";
+}
+
+</script>
+
+</body>
+</html>
